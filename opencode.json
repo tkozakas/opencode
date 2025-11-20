@@ -1,13 +1,9 @@
 {
   "$schema": "https://opencode.ai/config.json",
+
   "theme": "gruvbox",
   "autoupdate": true,
-  "command": {
-    "remove-comments": {
-      "template": "Remove only the comments that were added before the latest git changes. Compare the current code with the previous git commit to identify newly added comments and remove only those. Keep all existing comments that were in the previous version and preserve code functionality.",
-      "description": "Remove recently added comments before git changes"
-    }
-  },
+
   "mcp": {
     "gh_grep": {
       "type": "remote",
@@ -18,6 +14,7 @@
       "url": "https://mcp.context7.com/mcp"
     }
   },
+
   "keybinds": {
     "leader": "ctrl+x",
     "app_exit": "ctrl+c,ctrl+d,<leader>q,ctrl+o",
