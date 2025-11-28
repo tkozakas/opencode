@@ -16,7 +16,7 @@
       "path": "agent/build.md",
       "permission": {
         "bash": {
-          "git push": "ask"
+          "git *": "ask"
         }
       }
     },
