@@ -15,6 +15,15 @@ permission:
   edit: allow
   bash: allow
   webfetch: allow
+subagents:
+  - name: code-reviewer
+    description: Reviews code for clean code violations, security issues, and best practices
+    trigger: proactive
+    use_when: After writing significant code changes (>50 lines) or completing a feature
+  - name: refactorer
+    description: Identifies code smells and refactors code to follow clean code principles
+    trigger: on-demand
+    use_when: When dealing with legacy code or complex functions that need simplification
 ---
 
 # Clean Code Principles

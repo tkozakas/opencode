@@ -13,7 +13,12 @@
 
   "agent": {
     "build": {
-      "path": "agent/build.md"
+      "path": "agent/build.md",
+      "permission": {
+        "bash": {
+          "git push": "ask"
+        }
+      }
     },
     "plan": {
       "path": "agent/plan.md"
