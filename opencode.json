@@ -1,8 +1,24 @@
 {
   "$schema": "https://opencode.ai/config.json",
-
+  "share": "manual",
   "theme": "gruvbox",
   "autoupdate": true,
+
+  "tui": {
+    "scroll_speed": 3,
+    "scroll_acceleration": {
+      "enabled": true
+    }
+  },
+
+  "agent": {
+    "build": {
+      "path": "agent/build.md"
+    },
+    "plan": {
+      "path": "agent/plan.md"
+    }
+  },
 
   "mcp": {
     "gh_grep": {
